@@ -17,7 +17,7 @@
     "*.{css,html}": "stylelint --fix",
     "*.{js,css,html,md}": "prettier --write"
   },
-  "author": "Gurov Dmitriy",
+  "author": "Lisa Kurdzhieva",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.16.0",
