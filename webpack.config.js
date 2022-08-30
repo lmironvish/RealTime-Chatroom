@@ -3,7 +3,7 @@ const path = require("path")
 
 module.exports = {
   mode: "development",
-  entry: "./src/chat.js",
+  entry: "./src/app.js",
   devServer: {
     static: "./dist",
   },
