@@ -6,6 +6,7 @@ module.exports = {
   entry: "./src/app.js",
   devServer: {
     static: "./dist",
+    port: 8000,
   },
   output: {
     filename: "script.js",
