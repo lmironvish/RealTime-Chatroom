@@ -6,7 +6,6 @@ module.exports = {
   entry: "./src/app.js",
   devServer: {
     static: "./dist",
-    port: 8000,
   },
   output: {
     filename: "script.js",
@@ -17,7 +16,12 @@ module.exports = {
       {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
-        use: ["babel-loader"],
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
       },
     ],
   },
