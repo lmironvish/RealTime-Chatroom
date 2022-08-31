@@ -1,19 +1,24 @@
-.container{
+.container {
   max-width: 600px;
 }
-.btn{
-  background: #43d9be;
+
+.btn {
   color: white;
+
+  background: #43d9be;
   outline: none !important;
   box-shadow: none !important;
 }
-.btn:focus{
+
+.btn:focus {
   outline: none !important;
 }
-.name{
+
+.name {
   font-weight: bold;
 }
-.time{
+
+.time {
+  color: #999999;
   font-size: 0.7em;
-  color: #999;
 }
