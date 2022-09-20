@@ -53,4 +53,4 @@ node_modules
 # eslintignore #
 ###################
 docs/*.js
-build/*.js
+dist/*.js

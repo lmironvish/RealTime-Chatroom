@@ -5,7 +5,8 @@
 .btn {
   color: white;
 
-  background: #43d9be;
+  background: linear-gradient(90deg, #7773c6, #9d6cc0, #bd64b2);
+  border: 1px solid #7773c6;
   outline: none !important;
   box-shadow: none !important;
 }
