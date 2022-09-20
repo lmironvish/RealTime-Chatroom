@@ -99,7 +99,7 @@ class ChatUI {
 // create objects
 
 const chatUI = new ChatUI(chatList)
-const chatroom = new Chatroom("general", "lisa")
+const chatroom = new Chatroom("general", "anon")
 
 // event listeners
 
