@@ -23,3 +23,9 @@
   color: #999999;
   font-size: 0.7em;
 }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
