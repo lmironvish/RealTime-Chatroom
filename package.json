@@ -1,12 +1,12 @@
 {
-  "name": "learn-js-mathsprintgame",
+  "name": "learn-js-realtimechatroom",
   "version": "1.0.0",
-  "description": "learn-js-mathsprintgame",
+  "description": "learn-js-realtimechatroom",
   "private": true,
   "scripts": {
     "dev": "webpack serve --open",
     "build": "yarn lint && webpack --mode production",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "predeploy": "yarn build",
     "lint": "yarn lint:eslint && yarn lint:stylelint && yarn lint:prettier",
     "lint:eslint": "eslint --fix --ext \".js\" --ignore-path .eslintignore .",
