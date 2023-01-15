@@ -85,14 +85,28 @@ class ChatUI {
   }
 
   render(data) {
-    const html = `
-    <li class="list-group-item">
-    <strong><span class="username">${data.username}:</span></strong>
-    <span class="message">${data.message}</span>
-    <div class="time">${data.created_at}</div>
-    </li>
-    `
-    this.list.innerHTML += html
+    const listItem = document.createElement("li")
+    listItem.classList.add("list-group-item")
+
+    const listItemUserName = document.createElement("strong")
+    listItemUserName.classList.add("username")
+    listItemUserName.textContent = data.username
+
+    listItem.appendChild(listItemUserName)
+
+    const listItemMessage = document.createElement("span")
+    listItemMessage.classList.add("message")
+    listItemMessage.textContent = data.message
+
+    listItem.appendChild(listItemMessage)
+
+    const listItemTime = document.createElement("div")
+    listItemTime.classList.add("time")
+    listItemTime.textContent = data.created_at
+
+    listItem.appendChild(listItemMessage)
+
+    this.list.appendChild(listItem)
   }
 }
 
@@ -108,7 +122,7 @@ newChatForm.addEventListener("submit", (e) => {
 
   const message = newChatForm.message.value.trim()
   chatroom
-    .addChat(message)
+    .addChat(`: ${message}`)
     .then(() => newChatForm.reset())
     .catch((err) => console.log("Error: ", err.message))
 })
